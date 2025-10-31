@@ -1,16 +1,27 @@
 import pyautogui
 import time
+import os
+import sys
+
+def resource_path(relative_path):
+    # Get the absolute path for images when running as exe
+    if hasattr(sys, "_MEIPASS"):
+        return os.path.join(sys._MEIPASS, relative_path)
+    return os.path.join(os.path.abspath("."), relative_path)
+
+# Example usage:
+image_path = resource_path("assets/images")
 
 # Map images to messages
 image_messages = {
-    "assets/images/botleft1close.png": "Bot left!",
-    "assets/images/botleft2close.png": "Bot left!",
-    "assets/images/topleft1close.png": "Top left!",
-    "assets/images/topleft2close.png": "Top left!",
-    "assets/images/botright1close.png": "Bot right!",
-    "assets/images/botright2close.png": "Bot right!",
-    "assets/images/topright1test.png": "Top right!",
-    "assets/images/topright2close.png": "Top right!"
+    resource_path("assets/images/botleft1close.png"): "Bot left!",
+    resource_path("assets/images/botleft2close.png"): "Bot left!",
+    resource_path("assets/images/topleft1close.png"): "Top left!",
+    resource_path("assets/images/topleft2close.png"): "Top left!",
+    resource_path("assets/images/botright1close.png"): "Bot right!",
+    resource_path("assets/images/botright2close.png"): "Bot right!",
+    resource_path("assets/images/topright1close.png"): "Top right!",
+    resource_path("assets/images/topright2close.png"): "Top right!"
 }
 
 # Detection region: (left, top, width, height)
