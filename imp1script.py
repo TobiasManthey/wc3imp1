@@ -3,14 +3,14 @@ import time
 
 # Map images to messages
 image_messages = {
-    "botleft1close.png": "Bot left!",
-    "botleft2close.png": "Bot left!",
-    "topleft1close.png": "Top left!",
-    "topleft2close.png": "Top left!",
-    "botright1close.png": "Bot right!",
-    "botright2close.png": "Bot right!",
-    "topright1test.png": "Top right!",
-    "topright2close.png": "Top right!"
+    "assets/images/botleft1close.png": "Bot left!",
+    "assets/images/botleft2close.png": "Bot left!",
+    "assets/images/topleft1close.png": "Top left!",
+    "assets/images/topleft2close.png": "Top left!",
+    "assets/images/botright1close.png": "Bot right!",
+    "assets/images/botright2close.png": "Bot right!",
+    "assets/images/topright1test.png": "Top right!",
+    "assets/images/topright2close.png": "Top right!"
 }
 
 # Detection region: (left, top, width, height)
